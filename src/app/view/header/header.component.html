@@ -1,0 +1,35 @@
+<p-sidebar [(visible)]="displaySideBar">
+  <p-menu [model]="items"></p-menu>
+</p-sidebar>
+<nav class="navbar navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand">
+      <div class="display-4"><i (click)="displaySideBar = true" class="pi pi-bars burger-menu cursor"></i>Oracle Banking
+      </div>
+    </a>
+    <div class="d-flex">
+      <p-chip label="{{'Notification'}}" (click)="showNotification('top-right')" class="cursor" icon="pi pi-bell"
+        styleClass="mr-2 custom-chip" routerLink="/accountDetails"></p-chip>
+      <p-chip label="{{'Username'}}" class="cursor" icon="pi pi-user" styleClass="mr-2 custom-chip"
+        routerLink="/accountDetails"></p-chip>
+    </div>
+  </div>
+</nav>
+<p-dialog header="Notification" [(visible)]="displayNotification" [position]="position" [modal]="true"
+  [style]="{width: '30vw'}" [draggable]="false" [resizable]="false">
+  <div class="field col-12 col-6">
+    <div class="p-3">
+      <ul style="list-style: none;">
+        <li>
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <p-skeleton shape="circle" size="4rem"></p-skeleton>
+            <div style="width: 75%;">
+              <p-skeleton width="100%" styleClass="mb-2"></p-skeleton>
+              <p-skeleton width="75%"></p-skeleton>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</p-dialog>

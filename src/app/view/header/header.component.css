@@ -1,0 +1,17 @@
+:host ::ng-deep .p-menu{
+    width: 270px;
+}
+.burger-menu{
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.cursor:hover{
+    cursor: pointer;
+}
+
+:host ::ng-deep .p-chip.custom-chip {
+    background: none;
+    font-family: monospace;
+    font-size: 1.2rem;
+}
