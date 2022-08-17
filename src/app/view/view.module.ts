@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { PrimeModule } from '../prime/prime.module';
-import { BalanceComponent } from './balance/balance.component';
-import { UserDetailComponent } from './user-detail/user-detail.component';
+import { TransferComponent } from './transfer/transfer.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -12,8 +12,8 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
   declarations: [
     HomeComponent,
     HeaderComponent,
-    BalanceComponent,
-    UserDetailComponent
+    TransferComponent,
+    LoginComponent
   ],
   imports: [
     CommonModule,

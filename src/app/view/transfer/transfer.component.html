@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="display-5 fs-3 float-end pe-5 mt-5">Balance: {{'₹560000'}}</div>
+    <div class="display-4 ps-4">Hi, {{'Username'}}<div class="fs-4">your funds are ready to be transfered</div></div>
+    <hr>
+    <div class="p-fluid my-4">
+        <div class="col-8 col-4 my-2">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">Sender Account</span>
+                <input pInputText type="number" placeholder="{{'125468961'}}" [disabled]="true">
+                <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+            </div>
+        </div>
+        <div class="col-8 col-4 my-2">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">Receiver Account</span>
+                <input pInputText type="number" placeholder="Account Number">
+                <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+            </div>
+        </div>
+        <div class="col-8 col-4 my-2">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">Rupee (₹)</span>
+                <input type="number" pInputText placeholder="Amount">   
+                <span class="p-inputgroup-addon">.00</span>      
+            </div>
+        </div>
+        <div class="col-8 col-4 my-2">
+            <button pButton pRipple type="button" label="Transfer" class="p-button-raised p-button-success my-2"></button>
+            <button pButton pRipple type="button" label="Cancel" class="p-button-raised p-button-danger my-2"></button>
+        </div>
+    </div>
+</div>
+

@@ -8,14 +8,14 @@
       </div>
     </a>
     <div class="d-flex">
-      <p-chip label="{{'Notification'}}" (click)="showNotification('top-right')" class="cursor" icon="pi pi-bell"
-        styleClass="mr-2 custom-chip" routerLink="/accountDetails"></p-chip>
+      <p-chip label="{{'Activities'}}" (click)="showNotification('top-right')" class="cursor" icon="pi pi-bell"
+        styleClass="mr-2 custom-chip"></p-chip>
       <p-chip label="{{'Username'}}" class="cursor" icon="pi pi-user" styleClass="mr-2 custom-chip"
-        routerLink="/accountDetails"></p-chip>
+        routerLink="/home"></p-chip>
     </div>
   </div>
 </nav>
-<p-dialog header="Notification" [(visible)]="displayNotification" [position]="position" [modal]="true"
+<p-dialog header="Activities" [(visible)]="displayNotification" [position]="position" [modal]="true"
   [style]="{width: '30vw'}" [draggable]="false" [resizable]="false">
   <div class="field col-12 col-6">
     <div class="p-3">

@@ -7,6 +7,8 @@ import { ChipModule } from 'primeng/chip';
 import {BadgeModule} from 'primeng/badge';
 import {DialogModule} from 'primeng/dialog';
 import {SkeletonModule} from 'primeng/skeleton';
+import { InputTextModule } from "primeng/inputtext";
+import { AvatarModule } from "primeng/avatar";
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import {SkeletonModule} from 'primeng/skeleton';
     ChipModule,
     BadgeModule,
     DialogModule,
-    SkeletonModule
+    SkeletonModule,
+    InputTextModule,
+    AvatarModule
   ]
 })
 export class PrimeModule { }

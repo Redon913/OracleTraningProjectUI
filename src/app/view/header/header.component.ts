@@ -15,24 +15,52 @@ export class HeaderComponent implements OnInit {
 
   constructor() {
     this.items = [{
-      label: 'Navigate',
-      style: 'width: 280px;',
+      label: 'Account',
       items: [{
         label: 'Home',
         icon: 'pi pi-home',
         routerLink: '/home'
       },
       {
-        label: 'Account Balance',
-        icon: 'pi pi-money-bill',
-        routerLink: '/accountBalance'
+        label: 'Transfer Funds',
+        icon: 'pi pi-wallet',
+        routerLink: '/fundsTransfer'
       },
       {
-        label: 'Account Details',
+        label: 'Change Password',
         icon: 'pi pi-user',
-        routerLink: '/accountDetails'
+        routerLink: '/changePassword'
+      },
+      {
+        label: 'Login',
+        icon: 'pi pi-sign-in',
+        routerLink: '/auth/login'
+      },
+      {
+        label: 'Logout',
+        icon: 'pi pi-sign-out',
+        routerLink: '/auth/logout'
       }
       ]
+    },
+    {
+      label: 'Bank Details',
+      items: [
+      {
+        label: 'Investor',
+        icon: 'pi pi-money-bill',
+        routerLink: '/investors'
+      },
+      {
+        label: 'About Us',
+        icon: 'pi pi-info-circle',
+        routerLink: '/about'
+      },
+      {
+        label: 'Contact Us',
+        icon: 'pi pi-phone',
+        routerLink: '/contact'
+      }]
     }];
   }
 
