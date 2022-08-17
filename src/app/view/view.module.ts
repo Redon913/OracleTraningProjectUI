@@ -5,6 +5,7 @@ import { HeaderComponent } from './header/header.component';
 import { PrimeModule } from '../prime/prime.module';
 import { TransferComponent } from './transfer/transfer.component';
 import { LoginComponent } from './login/login.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 
 
 
@@ -13,7 +14,8 @@ import { LoginComponent } from './login/login.component';
     HomeComponent,
     HeaderComponent,
     TransferComponent,
-    LoginComponent
+    LoginComponent,
+    ChangePasswordComponent
   ],
   imports: [
     CommonModule,
